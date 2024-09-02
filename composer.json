@@ -1,6 +1,7 @@
 {
   "name": "waglpz/config",
   "description": "Web application component",
+  "version": "2.1.0",
   "license": "MIT",
   "type": "library",
   "minimum-stability": "dev",
@@ -73,6 +74,7 @@
     "waglpz:generate:password": "php bin/generate-password.php",
     "waglpz:test:normal": "phpunit --colors=always --no-coverage --order-by random",
     "waglpz:test:coverage": "phpunit --testdox --colors=always",
-    "waglpz:test:ci": "phpunit --colors=always --no-coverage --no-logging --do-not-cache-result --order-by random"
+    "waglpz:test:ci": "phpunit --colors=always --no-coverage --no-logging --do-not-cache-result --order-by random",
+    "waglpz:var:dump:server": "var-dump-server"
   }
 }

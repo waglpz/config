@@ -6,13 +6,14 @@ declare(strict_types=1);
 
 return [
     'anonymizeLog'         => [
+        'PAYLOAD' => ['apiSecret' => '*****'],
         '_SERVER' => [
             'DB_PASSWD' => '*****',
             'DB_USER'   => '*****',
         ],
         '_POST'   => [/* set here necessary keys wich should be anonymized in log*/],
     ],
-    'logErrorsDir'         => '/tmp',
+    'logErrorsDir'         => $_SERVER['LOG_DIR'],
 //    'router'               => include 'router.php',
 //    'db'                   => include 'db.php',
     'logger'               => include 'logger.php',
